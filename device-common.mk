@@ -325,11 +325,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/environment:system/halium/etc/environment \
-    $(LOCAL_PATH)/ubuntu/70-dreamlte.rules:system/halium/lib/udev/rules.d/70-android.rules \
+#    $(LOCAL_PATH)/ubuntu/70-dream2lte.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
-    $(LOCAL_PATH)/ubuntu/config:system/halium/var/lib/lxc/android/config \
-    $(LOCAL_PATH)/ubuntu/config-dreamlte.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml \
+    $(LOCAL_PATH)/ubuntu/config:system/halium/var/lib/lxc/android/config #\
+#    $(LOCAL_PATH)/ubuntu/config-dream2lte.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml \
 #    $(LOCAL_PATH)/ubuntu/ofono.override:system/halium/etc/init/ofono.override \
-PRODUCT_COPY_FILES += \
-    system/core/debuggerd/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy \
-    system/core/debuggerd/seccomp_policy/crash_dump.arm64.policy:system/etc/seccomp_policy/crash_dump.arm64.policy
+#PRODUCT_COPY_FILES += \
+#    system/core/debuggerd/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy \
+#    system/core/debuggerd/seccomp_policy/crash_dump.arm64.policy:system/etc/seccomp_policy/crash_dump.arm64.policy
