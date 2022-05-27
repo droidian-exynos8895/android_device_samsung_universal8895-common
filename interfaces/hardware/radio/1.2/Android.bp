@@ -42,6 +42,6 @@ hidl_interface {
         "SecSignalStrength",
         "SecVoiceRegStateResult",
     ],
-    gen_java: true,
+//    gen_java: true,
 }
 
