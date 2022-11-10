@@ -295,9 +295,9 @@ PRODUCT_PACKAGES += \
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/universal8895-common/universal8895-common-vendor.mk)
 
-####################################################
-#  Ubuntu Touch
-####################################################
+#####################################################
+#################  Ubuntu Touch  ####################
+#####################################################
 
 # Aethercast
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -323,9 +323,10 @@ PRODUCT_PACKAGES += \
     libnetutils 
 
 PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/ramdisk/etc/fstab.samsungexynos8895:system/halium/etc/fstab \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
     $(LOCAL_PATH)/ubuntu/environment:system/halium/etc/environment \
-#    $(LOCAL_PATH)/ubuntu/70-dream2lte.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(LOCAL_PATH)/ubuntu/70-dream2lte.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/rsyslog.conf:system/halium/etc/rsyslog.conf \
     $(LOCAL_PATH)/ubuntu/config:system/halium/var/lib/lxc/android/config #\
 #    $(LOCAL_PATH)/ubuntu/config-dream2lte.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml \

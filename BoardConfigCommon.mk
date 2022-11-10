@@ -81,8 +81,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE :=  58556678144 #(57184256 sda24)
 BOARD_CACHEIMAGE_PARTITION_SIZE    :=  524288000 #(512000 sda18)
 BOARD_FLASH_BLOCK_SIZE := 4096
 
-# Vendor separation
-TARGET_COPY_OUT_VENDOR := system/vendor
+## Vendor separation
+#TARGET_COPY_OUT_VENDOR := system/vendor
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
@@ -146,4 +146,4 @@ BOARD_SEPOLICY_DIRS := device/samsung/universal8895-common/sepolicy
 BOARD_ROOT_EXTRA_FOLDERS += \
 /efs \
 /misc \
-#/preload \
+/preload
