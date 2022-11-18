@@ -1,2 +1,2 @@
-# misc
-type misc_file, file_type;
+# this really is a comment
+type tmp_root_mount_file, file_type;

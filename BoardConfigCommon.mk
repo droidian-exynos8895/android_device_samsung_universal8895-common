@@ -82,7 +82,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE    :=  524288000 #(512000 sda18)
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 ## Vendor separation
-#TARGET_COPY_OUT_VENDOR := system/vendor
+TARGET_COPY_OUT_VENDOR := system/vendor
 
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
@@ -144,6 +144,10 @@ BOARD_SEPOLICY_DIRS := device/samsung/universal8895-common/sepolicy
 
 # Extra folders for Ubuntu Touch
 BOARD_ROOT_EXTRA_FOLDERS += \
+/boot \
+/cache \
 /efs \
 /misc \
-/preload
+#/persist \
+/preload \
+/recovery \
