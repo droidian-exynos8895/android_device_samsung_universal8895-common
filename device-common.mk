@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.audio@2.0-impl \
     android.hardware.soundtrigger@2.0-impl \
+    android.primary.default.so \
     libalsautils \
     libeffects \
     libspeexresampler \
@@ -313,14 +314,15 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl \
     android.hardware.gnss@1.1-impl \
     android.hardware.gnss@1.0-service \
+    android.hardware.media.omx@1.0-impl \
     android.hardware.media.omx@1.0-service \
     android.frameworks.schedulerservice@1.0 \
     libstagefright_ccodec \
     libclang_rt.ubsan_standalone-aarch64-android \
     libandroid \
-#    audio.hidl_compat.default \
+    audio.hidl_compat.default \
 #    libis_compat_layer \
-#    libcameraservice \
+    libcameraservice \
     libnetutils 
 
 PRODUCT_COPY_FILES += \
