@@ -335,5 +335,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/config-dream2lte.xml:system/halium/usr/share/repowerd/device-configs/config-default.xml #\
 #    $(LOCAL_PATH)/ubuntu/ofono.override:system/halium/etc/init/ofono.override \
 PRODUCT_COPY_FILES += \
-    system/core/debuggerd/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy \
-    system/core/debuggerd/seccomp_policy/crash_dump.arm64.policy:system/etc/seccomp_policy/crash_dump.arm64.policy
+    $(LOCAL_PATH)/system/core/debuggerd/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy \
+    $(LOCAL_PATH)/system/core/debuggerd/seccomp_policy/crash_dump.arm64.policy:system/etc/seccomp_policy/crash_dump.arm64.policy
