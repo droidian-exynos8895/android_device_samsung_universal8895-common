@@ -134,15 +134,13 @@ TARGET_LD_SHIM_LIBS += \
     /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so \
     /system/lib64/libexynoscamera.so|/vendor/lib64/libexynoscamera_shim.so
 
-## UBUNTU TOUCH ##
-
 # System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS := device/samsung/universal8895-common/sepolicy
 
-# Extra folders for Ubuntu Touch
+# Extra folders for halium (do we actually need these tho?)
 BOARD_ROOT_EXTRA_FOLDERS += \
 /boot \
 /cache \
